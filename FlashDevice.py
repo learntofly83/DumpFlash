@@ -295,8 +295,8 @@ class NandIO:
 			self.PageCount=(self.ChipSizeMB*1024*1024)/self.PageSize
 
 		self.RawPageSize=self.PageSize+self.OOBSize
-		self.BlockSize=self.PagePerBlock*self.RawPageSize
-		self.RawBlockSize=self.PagePerBlock*self.PageSize
+		self.BlockSize=self.PagePerBlock*self.PageSize
+		self.RawBlockSize=self.PagePerBlock*self.RawPageSize
 
 	def DumpInfo(self):
 		print 'Name:\t\t',self.Name
